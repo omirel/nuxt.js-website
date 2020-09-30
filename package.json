@@ -5,9 +5,8 @@
     "yarn": "^0.19.1"
   },
   "scripts": {
-    "dev": "npm run build; nuxt start",
     "build": "nuxt build",
-    "start": "npm run build; NODE_ENV=production HOST=0.0.0.0 nuxt start"
+    "start": "nuxt start"
   },
   "engines": {
     "node": "12.x"
