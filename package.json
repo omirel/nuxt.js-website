@@ -11,6 +11,6 @@
     "dev": "npm run build; nuxt start"
   },
   "engines": {
-    "node": "7.4.0"
+    "node": "12.x"
   }
 }
