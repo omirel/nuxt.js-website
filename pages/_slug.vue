@@ -20,8 +20,8 @@
             }
         },
         async asyncData({params}) {
-            const data = await bucket.getObject({slug: params.index})
-            const res = await data.object
+            const data = await bucket.getObject(params.slug ? params : {slug: "home"})
+            const res = data.object
             return {
                 page: res,
                 loading: false

@@ -8,17 +8,11 @@
         <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/" active-class="none"><i class="logo"></i></nuxt-link>
-      </li>
-      <li>
         <nuxt-link to="/work">Work</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </li>
-      <li>
-        <nuxt-link to="/contact2">Contact222</nuxt-link>
-        </li>
     </ul>
   </nav>
 </template>
