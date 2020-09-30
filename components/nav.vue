@@ -16,6 +16,9 @@
       <li>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/contact2">Contact222</nuxt-link>
+        </li>
     </ul>
   </nav>
 </template>
