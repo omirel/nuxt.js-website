@@ -19,7 +19,7 @@
           <div style="margin-bottom:20px;">
             <a href="https://cosmicjs.com" target="_blank">
               <img style="float:left;margin-right:15px;position:relative;" src="https://cosmicjs.com/images/logo.svg" width="28" height="28"/>
-              <span class="powered-by">Proudly powered by Cosmic JS</span>
+              <span class="powered-by">{{ $config.copyright}}</span>
             </a>
           </div>
         </div>
@@ -28,6 +28,18 @@
     </footer>
   </div>
 </template>
+
+<script>
+  import config from '../config'
+
+  export default {
+    data() {
+      return {
+        loading: config.cosmic.bucket.slug
+      }
+    }
+  }
+</script>
 
 <style>
 .footer {

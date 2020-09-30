@@ -1,6 +1,6 @@
 <template>
   <div class="hero-unit" :style="style">
-    <h1>{{ page.metadata.headline.value }}</h1>
+    <h1>{{ page.metadata.headline }}</h1>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   computed: {
     style () {
       return {
-        background: `linear-gradient(140deg,${this.page.metadata.hero_gradient_color_hex_start.value} 10%, ${this.page.metadata.hero_gradient_color_hex_end.value} 90%) center/cover no-repeat`
+        background: `linear-gradient(140deg,${this.page.metadata.hero_gradient_color_hex_start} 10%, ${this.page.metadata.hero_gradient_color_hex_end} 90%) center/cover no-repeat`
       }
     }
   }
