@@ -5,8 +5,7 @@
   "main": "nuxt.config.js",
   "dependencies": {
     "cosmicjs": "^3.3.1",
-    "nuxt": "^2.14.6",
-    "yarn": "^1.22.10"
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {},
   "scripts": {
