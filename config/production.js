@@ -1,9 +1,9 @@
 module.exports = {
   cosmic: {
     bucket: {
-      slug: process.env.COSMIC_BUCKET_SLUG || 'nuxt-website',
-      read_key: process.env.COSMIC_READ_KEY,
-      write_key: process.env.COSMIC_WRITE_KEY
+      slug: 'wwwtgbrainscom',
+      read_key: 'sfFQ6KZUWA1bTCZFfIfHcNqjrZXkDU2AGgygYc5DPy1bj5jPxE',
+      write_key: 'AUBaaP8QeRtl9ydlyDtTg833QutaTgDUCv7JiRbwdz0oe0o22l'
     }
   }
 }
