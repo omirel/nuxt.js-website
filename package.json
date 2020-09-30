@@ -1,14 +1,25 @@
 {
+  "name": "nuxt.js-website",
+  "version": "1.0.0",
+  "description": "![cosmic Vue Nuxt](https://cloud.githubusercontent.com/assets/904724/22075187/452f04e8-ddab-11e6-897c-3e065da06306.png)",
+  "main": "nuxt.config.js",
   "dependencies": {
-    "cosmicjs": "^2.36.0",
-    "nuxt": "^0.9.6",
-    "yarn": "^0.19.1"
+    "cosmicjs": "^3.3.1",
+    "nuxt": "^2.14.6",
+    "yarn": "^1.22.10"
   },
+  "devDependencies": {},
   "scripts": {
-    "build": "nuxt build",
-    "start": "nuxt start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "12.x"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omirel/nuxt.js-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omirel/nuxt.js-website/issues"
+  },
+  "homepage": "https://github.com/omirel/nuxt.js-website#readme"
 }
