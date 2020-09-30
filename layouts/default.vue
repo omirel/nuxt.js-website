@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavBar from '~components/nav'
-import SiteFooter from '~components/footer'
+import NavBar from '../components/nav'
+import SiteFooter from '../components/footer'
 
 export default {
   head: {
@@ -28,4 +28,4 @@ export default {
 }
 </script>
 
-<style src="~assets/main.css" />
+<style src="../assets/main.css" />
