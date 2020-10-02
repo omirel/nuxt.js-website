@@ -2,6 +2,7 @@
     <main :key="page.slug">
         <hero-unit :page="page"/>
         <div class="container" v-html="page.content"></div>
+        <div class="small">Modified at: {{ modifiedAt }}</div>
     </main>
 </template>
 
@@ -30,6 +31,12 @@
         head() {
             return {
                 title: this.page.title
+            }
+        },
+        computed: {
+            modifiedAt() {
+                const date = new Date(this.page.modified_at)
+                return date.toLocaleString()
             }
         },
         components: {
