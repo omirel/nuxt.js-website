@@ -1,19 +1,15 @@
 <template>
     <div role="main" class="main" :key="page.slug">
         <Header :data="page"/>
-        <Contact :data="teasers"/>
-        <GetInTouch :data="teasers"/>
+        <Contact :data="page"/>
+        <GetInTouch :data="page"/>
     </div>
 </template>
 
 <script>
-    import GetInTouch from '../components/getInTouch'
     import config from '../config'
     import Header from "../components/header";
-    import About from "../components/about";
-    import Counter from "../components/counter";
-    import AboutMarketing from "../components/aboutMarketing";
-    import Insights from "../components/insights";
+    import GetInTouch from '../components/getInTouch'
     import Contact from "../components/contact";
 
     const Cosmic = require('cosmicjs')
@@ -29,11 +25,8 @@
         async asyncData({params}) {
             const data = await bucket.getObject({slug: "contact"})
 
-            const teasers = await bucket.getObjects({type: "insights"})
-
             return {
                 page: data.object,
-                teasers: teasers.objects,
                 loading: false
             }
         },
@@ -43,12 +36,8 @@
             }
         },
         components: {
-            Contact,
-            Insights,
-            AboutMarketing,
-            Counter,
-            About,
             Header,
+            Contact,
             GetInTouch
         }
     }
