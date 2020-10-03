@@ -8,7 +8,10 @@
             <div class="header-row">
               <div class="header-logo">
                 <a href="demo-digital-agency-2.html">
-                  <img alt="Porto" width="139" height="59" src="/img/demos/digital-agency-2/logos/logo-1.png">
+                  <object class="icon-circle" data="/img/logo-white.svg" height="59" type="image/svg+xml">
+                    <!-- Für Browser ohne SVG-Unterstützung -->
+                    <img src="/img/logo-white.svg" height="59" alt="Alternative PNG-Logo">
+                  </object>
                 </a>
               </div>
             </div>
@@ -30,74 +33,74 @@
                         </a>
                       </li>
                       <li class="dropdown">
-                        <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3 dropdown-toggle" href="demo-digital-agency-2-our-services.html">
+                        <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3 dropdown-toggle" href="/services">
                           Our Services
                         </a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services.html">
-                              Overview
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              UX Design
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Web Development
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              B2B Software
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Content Marketing
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Email Marketing
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Search Engine Optimize
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Social Media Ads
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Brand and Identity
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-                              Content Strategy
-                            </a>
-                          </li>
-                        </ul>
+<!--                        <ul class="dropdown-menu">-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services.html">-->
+<!--                              Overview-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              UX Design-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Web Development-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              B2B Software-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Content Marketing-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Email Marketing-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Search Engine Optimize-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Social Media Ads-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Brand and Identity-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
+<!--                              Content Strategy-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                        </ul>-->
                       </li>
+<!--                      <li class="dropdown-primary">-->
+<!--                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-work.html">-->
+<!--                          Our Work-->
+<!--                        </a>-->
+<!--                      </li>-->
                       <li class="dropdown-primary">
-                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-work.html">
-                          Our Work
-                        </a>
-                      </li>
-                      <li class="dropdown-primary">
-                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-blog.html">
+                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/insights">
                           Our Insights
                         </a>
                       </li>
                       <li class="dropdown-primary">
-                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-contact-us.html">
+                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/contact">
                           Contact Us
                         </a>
                       </li>

@@ -17,7 +17,8 @@ export default {
     ],
     link: [
      { rel: 'icon', type: 'image/x-icon', href: 'https://nuxtjs.org/favicon.ico' },
-     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700,800,900&display=swap' }
+     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=family=Lora:400,400i,700,700i' },
+     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap' }
     ]
   },
   components: {
