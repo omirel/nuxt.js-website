@@ -17,7 +17,6 @@ export default {
 			{ src: '/vendor/jquery.gmap/jquery.gmap.min.js', body: true, defer: true },
 			{ src: '/vendor/jquery.lazyload/jquery.lazyload.min.js', body: true, defer: true },
 			{ src: '/vendor/isotope/jquery.isotope.min.js', body: true, defer: true },
-			{ src: '/vendor/owl.carousel/owl.carousel.min.js', body: true, defer: true },
 			{ src: '/vendor/magnific-popup/jquery.magnific-popup.min.js', body: true, defer: true },
 			{ src: '/vendor/vide/jquery.vide.min.js', body: true, defer: true },
 			{ src: '/vendor/vivus/vivus.min.js', body: true, defer: true },
@@ -61,8 +60,6 @@ export default {
 		'~/assets/vendor/fontawesome-free/css/all.min.css',
 		'~/assets/vendor/animate/animate.compat.css',
 		'~/assets/vendor/simple-line-icons/css/simple-line-icons.min.css',
-		'~/assets/vendor/owl.carousel/assets/owl.carousel.min.css',
-		'~/assets/vendor/owl.carousel/assets/owl.theme.default.min.css',
 		'~/assets/vendor/magnific-popup/magnific-popup.min.css',
 		
 		// !-- Theme CSS -->
