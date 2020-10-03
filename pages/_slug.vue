@@ -1,14 +1,25 @@
 <template>
-    <main :key="page.slug">
-        <hero-unit :page="page"/>
-        <div class="container" v-html="page.content"></div>
-        <div class="small">Modified at: {{ modifiedAt }}</div>
-    </main>
+    <div role="main" class="main" :key="page.slug">
+        <Slider :data="page"/>
+        <BusinessFields :data="teasers"/>
+        <OurApproach :data="teasers"/>
+        <OurWork :data="teasers"/>
+        <WeHelp :data="teasers"/>
+        <Insights :data="teasers"/>
+        <GetInTouch :data="teasers"/>
+    </div>
 </template>
 
 <script>
     import HeroUnit from '../components/hero-unit'
+    import Insights from '../components/insights'
+    import GetInTouch from '../components/getInTouch'
     import config from '../config'
+    import WeHelp from "../components/weHelp";
+    import OurWork from "../components/ourWork";
+    import OurApproach from "../components/OurApproach";
+    import BusinessFields from "../components/businessFields";
+    import Slider from "../components/slider";
 
     const Cosmic = require('cosmicjs')
     const api = Cosmic()
@@ -22,9 +33,12 @@
         },
         async asyncData({params}) {
             const data = await bucket.getObject(params.slug ? params : {slug: "home"})
-            const res = data.object
+
+            const teasers = await bucket.getObjects({type: "insights"})
+
             return {
-                page: res,
+                page: data.object,
+                teasers: teasers.objects,
                 loading: false
             }
         },
@@ -33,24 +47,15 @@
                 title: this.page.title
             }
         },
-        computed: {
-            modifiedAt() {
-                const date = new Date(this.page.modified_at)
-                return date.toLocaleString()
-            }
-        },
         components: {
-            HeroUnit
+            Slider,
+            BusinessFields,
+            OurApproach,
+            OurWork,
+            WeHelp,
+            HeroUnit,
+            Insights,
+            GetInTouch
         }
     }
 </script>
-
-<style scoped>
-    .container {
-        margin: 0 auto;
-        margin-top: 5px;
-        max-width: 960px;
-        padding: 15px;
-        padding-bottom: 40px;
-    }
-</style>

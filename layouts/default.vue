@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <nav-bar/>
     <nuxt/>
     <site-footer/>
@@ -17,8 +17,7 @@ export default {
     ],
     link: [
      { rel: 'icon', type: 'image/x-icon', href: 'https://nuxtjs.org/favicon.ico' },
-     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' },
-     { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
+     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700,800,900&display=swap' }
     ]
   },
   components: {
@@ -27,5 +26,3 @@ export default {
   }
 }
 </script>
-
-<style src="../assets/main.css" />
