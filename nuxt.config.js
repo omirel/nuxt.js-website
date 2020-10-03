@@ -83,6 +83,6 @@ export default {
 		'~/assets/css/custom.css',
 	],
 	build: {
-		extractCSS: false
+		extractCSS: true
 	}
 };
