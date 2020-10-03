@@ -20,8 +20,7 @@ export default {
 			{ src: '/vendor/magnific-popup/jquery.magnific-popup.min.js', body: true, defer: true },
 			{ src: '/vendor/vide/jquery.vide.min.js', body: true, defer: true },
 			{ src: '/vendor/vivus/vivus.min.js', body: true, defer: true },
-		
-		// <!--(remove-empty-lines-end)-->
+			
 		
 		// <!-- Theme Base, Components and Settings -->
 		{ src: '/js/theme.js', body: true, defer: true },
