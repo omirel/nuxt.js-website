@@ -8,19 +8,13 @@ export default {
 			{ src: '/js/vendor/jquery.min.js', body: true, defer: true },
 			{ src: '/js/vendor/jquery.appear.min.js', body: true, defer: true },
 			{ src: '/js/vendor/jquery.easing.min.js', body: true, defer: true },
-			{ src: '/js/vendor/jquery.cookie.min.js', body: true, defer: true },
-			{ src: '/js/vendor/popper.min.js', body: true, defer: true },
 			{ src: '/js/vendor/bootstrap.min.js', body: true, defer: true },
-			
 			{ src: '/js/vendor/common.min.js', body: true, defer: true },
-			{ src: '/js/vendor/jquery.validate.min.js', body: true, defer: true },
 			{ src: '/js/vendor/jquery.easypiechart.min.js', body: true, defer: true },
-			{ src: '/js/vendor/jquery.gmap.min.js', body: true, defer: true },
+			// { src: '/js/vendor/jquery.gmap.min.js', body: true, defer: true },
 			{ src: '/js/vendor/jquery.lazyload.min.js', body: true, defer: true },
-			// { src: '~/assets/vendor/isotope/jquery.isotope.min.js', body: true, defer: true },
-			{ src: '/js/vendor/jquery.magnific-popup.min.js', body: true, defer: true },
-			{ src: '/js/vendor/jquery.vide.min.js', body: true, defer: true },
-			{ src: '/js/vendor/vivus.min.js', body: true, defer: true },
+			// { src: '/js/vendor/jquery.vide.min.js', body: true, defer: true },
+			// { src: '/js/vendor/vivus.min.js', body: true, defer: true },
 
 
 		// <!-- Theme Base, Components and Settings -->
@@ -29,9 +23,6 @@ export default {
 		// <!-- Current Page Vendor and Views -->
 		{ src: '/js/vendor/jquery.themepunch.tools.min.js', body: true, defer: true },
 		{ src: '/js/vendor/jquery.themepunch.revolution.min.js', body: true, defer: true },
-
-		// <!-- Current Page Vendor and Views -->
-		{	src: '/js/view.contact.js', body: true, defer: true },
 
 		// <!-- Demo -->
 		{ src: '/js/demos/demo-digital-agency-2.js', body: true, defer: true },

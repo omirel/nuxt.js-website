@@ -9,7 +9,7 @@
 		<div id="revolutionSlider" class="slider rev_slider manual" data-version="5.4.8" style="height: 991px;">
 			<ul>
 				<li data-transition="fade">
-					<img src="~/assets/img/demos/digital-agency-2/bg/bg-1.jpg"
+					<img src="/img/demos/digital-agency-2/bg/bg-1.jpg"
 						 alt=""
 						 data-bgposition="center center"
 						 data-bgfit="cover"
