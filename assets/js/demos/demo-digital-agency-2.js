@@ -25,11 +25,11 @@ Theme Version:	8.1.0
             bgparallax:"on",
             disable_onmobile:"off"
         },
-        navigation: { 
+        navigation: {
             arrows: {
                 enable: false
             },
-            bullets: { 
+            bullets: {
                 enable: false
             }
         }
