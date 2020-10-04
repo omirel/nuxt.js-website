@@ -2,13 +2,13 @@
 	<div class="container mt-3 mt-xl-0 py-5 p-relative z-index-2">
 		<div class="row justify-content-center">
 			<div class="col-md-10">
-				<h4 class="d-block w-100 text-color-dark custom-text-10 font-weight-bolder text-center mb-4 pb-3 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">We Collaborate With Brands<span class="text-color-primary">.</span></h4>
-				<p class="custom-font-tertiary custom-text-7 line-height-6 mb-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut tellus ante. Sit amet, consectetur adipiscing elit. Morbi ut tellus ante am suscipit urna risus.
-				</p>
-				<p class="custom-text-4 mb-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
+				<h4 class="d-block w-100 text-color-dark custom-text-10 font-weight-bolder text-center mb-4 pb-3 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">{{data.metadata.subheader}}<span class="text-color-primary">.</span></h4>
+				<div class="custom-font-tertiary custom-text-7 line-height-6 mb-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;" v-html="data.metadata.content1">
+
+				</div>
+				<div class="custom-text-4 mb-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;" v-html="data.metadata.content2">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.
-				</p>
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center py-5">

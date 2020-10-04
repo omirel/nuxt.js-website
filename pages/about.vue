@@ -1,7 +1,7 @@
 <template>
     <div role="main" class="main" :key="page.slug">
         <Header :data="page"/>
-        <About :data="teasers"/>
+        <About :data="page"/>
         <Counter :data="teasers"/>
         <AboutMarketing :data="teasers"/>
         <Insights :data="teasers"/>
@@ -29,12 +29,10 @@
             }
         },
         async asyncData({params}) {
-            const data = await bucket.getObject({slug: "about"})
-
+            const page = await bucket.getObject({slug: "about"})
             const teasers = await bucket.getObjects({type: "insights"})
-
             return {
-                page: data.object,
+                page: page.object,
                 teasers: teasers.objects,
                 loading: false
             }

@@ -27,12 +27,12 @@
             }
         },
         async asyncData({params}) {
-            const data = await bucket.getObject({slug: "services"})
+            const page = await bucket.getObject({slug: "services"})
 
             const teasers = await bucket.getObjects({type: "insights"})
 
             return {
-                page: data.object,
+                page: page.object,
                 teasers: teasers.objects,
                 loading: false
             }
