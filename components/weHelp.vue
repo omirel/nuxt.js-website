@@ -7,21 +7,21 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<nuxt-link to="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
 							UX Design
 						</div>
-					</a>
+					</nuxt-link>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
 							Web Development
 						</div>
 					</a>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
 							B2B Software
 						</div>
@@ -30,21 +30,21 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
 							Content Marketing
 						</div>
 					</a>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
 							Email Marketing
 						</div>
 					</a>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
 							Search Engine Optimize
 						</div>
@@ -53,21 +53,21 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
 							Social Media Ads
 						</div>
 					</a>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
 							Brand and Identity
 						</div>
 					</a>
 				</div>
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-					<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
+					<a href="/services/detail" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
 							Content Strategy
 						</div>

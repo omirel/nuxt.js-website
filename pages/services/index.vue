@@ -9,12 +9,12 @@
 </template>
 
 <script>
-    import GetInTouch from '../components/getInTouch'
-    import config from '../config'
-    import Header from "../components/header";
-    import Services from "../components/services";
-    import WeHelp from "../components/weHelp";
-    import Clients from "../components/clients";
+    import GetInTouch from '~/components/getInTouch'
+    import config from '~/config'
+    import Header from "~/components/header";
+    import Services from "~/components/services";
+    import WeHelp from "~/components/weHelp";
+    import Clients from "~/components/clients";
 
     const Cosmic = require('cosmicjs')
     const api = Cosmic()
