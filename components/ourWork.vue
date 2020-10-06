@@ -7,7 +7,7 @@
 						<div class="row w-100 m-0 isotope-item search-engine-optimize social-media-ads">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<img src="/img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
+									<img alt="Top Gear Brains EOOD" src="/img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
 									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 										<div class="text-left p-relative z-index-2 mb-3">
 											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Campaing</h4>
@@ -21,7 +21,7 @@
 						<div class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<img src="/img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
+									<img alt="Top Gear Brains EOOD" src="/img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
 									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 										<div class="text-left p-relative z-index-2 mb-3">
 											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Porto Dashboard</h4>
@@ -35,7 +35,7 @@
 						<div class="row w-100 m-0 isotope-item ui-design web-development b2b-software">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<img src="/img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
+									<img alt="Top Gear Brains EOOD" src="/img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
 									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 										<div class="text-left p-relative z-index-2 mb-3">
 											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Responsive Photos</h4>
@@ -49,7 +49,7 @@
 						<div class="row w-100 m-0 isotope-item brand-and-identity content-strategy">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<img src="/img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
+									<img alt="Top Gear Brains EOOD" src="/img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
 									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 										<div class="text-left p-relative z-index-2 mb-3">
 											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Mobile App</h4>

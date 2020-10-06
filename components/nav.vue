@@ -10,7 +10,7 @@
                 <a href="demo-digital-agency-2.html">
                   <object class="icon-circle" data="/img/logo-white.svg" height="59" type="image/svg+xml">
                     <!-- Für Browser ohne SVG-Unterstützung -->
-                    <img src="/img/logo-white.svg" height="59" alt="Alternative PNG-Logo">
+                    <img src="/img/logo-white.svg" height="59" alt="Top Gear Brains EOOD Logo">
                   </object>
                 </a>
               </div>

@@ -19,7 +19,7 @@
 					<div class="row px-3">
 						<div class="col-xl-6 mr-0 overflow-hidden col-where-you-are-postal">
 							<div class="row justify-content-end p-relative h-100">
-								<img src="img/demos/digital-agency-2/contact-us/contact-us-1.jpg" class="img-fluid">
+								<img alt="Top Gear Brains EOOD" src="img/demos/digital-agency-2/contact-us/contact-us-1.jpg" class="img-fluid">
 								<div class="col-lg-6 bg-color-primary d-flex flex-column align-items-center justify-content-center col-where-you-are-postal-text py-5 py-lg-0">
 									<h4 class="text-color-light custom-text-9">Los Angeles</h4>
 									<p class="mb-1 text-color-light custom-text-4">123 The Main Street</p>
@@ -30,7 +30,7 @@
 						</div>
 						<div class="col-xl-6 ml-0 overflow-hidden col-where-you-are-postal">
 							<div class="row justify-content-end p-relative h-100">
-								<img src="img/demos/digital-agency-2/contact-us/contact-us-2.jpg" class="img-fluid">
+								<img alt="Top Gear Brains EOOD" src="img/demos/digital-agency-2/contact-us/contact-us-2.jpg" class="img-fluid">
 								<div class="col-lg-6 bg-color-primary d-flex flex-column align-items-center justify-content-center col-where-you-are-postal-text py-5 py-lg-0">
 									<h4 class="text-color-light custom-text-9">New York</h4>
 									<p class="mb-1 text-color-light custom-text-4">123 The Main Street</p>
