@@ -9,8 +9,8 @@
 		<div id="revolutionSlider" class="slider rev_slider manual" data-version="5.4.8" style="height: 991px;">
 			<ul>
 				<li data-transition="fade">
-					<img alt="Top Gear Brains EOOD" src="/img/demos/digital-agency-2/bg/bg-1.jpg"
-						 alt=""
+					<img src="/img/bg/bg-1.jpg"
+						 alt="Top Gear Brains EOOD"
 						 data-bgposition="center center"
 						 data-bgfit="cover"
 						 data-bgrepeat="no-repeat"

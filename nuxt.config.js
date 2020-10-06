@@ -75,5 +75,38 @@ export default {
 
 		//  <!-- Theme Custom CSS -->
 		'~/assets/css/custom.css',
-	]
+	],
+	build: {
+		extend (config, { isDev, isClient, loaders: { vue } }) {
+			if (isClient) {
+				vue.transformAssetUrls.img = ['data-src', 'src']
+				vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+			}
+		}
+	},
+	plugins: [
+		'~/plugins/vue-lazysizes.client.js'
+	],
+	modules: [
+		'@bazzite/nuxt-optimized-images',
+	],
+	
+	optimizedImages: {
+		inlineImageLimit: -1,
+		handleImages: ['jpeg', 'jpg', 'png', 'svg', 'webp', 'gif'],
+		optimizeImages: true,
+		optimizeImagesInDev: false,
+		defaultImageLoader: 'img-loader',
+		mozjpeg: {
+			quality: 40
+		},
+		optipng: false,
+		pngquant: {
+			speed: 7,
+			quality: [0.40, 0.4]
+		},
+		webp: {
+			quality: 40
+		}
+	}
 };
