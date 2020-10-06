@@ -7,14 +7,14 @@
 </template>
 
 <script>
-    import GetInTouch from '../components/getInTouch'
-    import config from '../config'
-    import Header from "../components/header";
-    import About from "../components/about";
-    import Counter from "../components/counter";
-    import AboutMarketing from "../components/aboutMarketing";
-    import Insights from "../components/insights";
-    import Contact from "../components/contact";
+    import GetInTouch from '~/components/getInTouch'
+    import config from '~/config'
+    import Header from "~/components/header";
+    import About from "~/components/about";
+    import Counter from "~/components/counter";
+    import AboutMarketing from "~/components/aboutMarketing";
+    import Insights from "~/components/insights";
+    import Contact from "~/components/contact";
 
     const Cosmic = require('cosmicjs')
     const api = Cosmic()
