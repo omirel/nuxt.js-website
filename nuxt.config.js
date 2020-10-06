@@ -84,6 +84,9 @@ export default {
 			}
 		}
 	},
+	buildModules: [
+		'nuxt-purgecss',
+	],
 	plugins: [
 		'~/plugins/vue-lazysizes.client.js'
 	],
