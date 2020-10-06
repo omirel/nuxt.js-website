@@ -4,17 +4,20 @@
       <div class="row justify-content-between">
         <div class="col-sm-12 col-lg-6 col-xl-6">
           <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-            <h4 class="custom-font-primary custom-newsletter-title font-weight-bold mb-4 custom-text-7">Join for Company Updates</h4>
+            <label for="newsletterEmail" class="custom-font-primary custom-newsletter-title font-weight-bold mb-4 custom-text-7">Join for Company Updates</label>
             <div class="alert alert-success d-none" id="newsletterSuccess">
               <strong>Success!</strong> You've been added to our email list.
             </div>
             <div class="alert alert-danger d-none" id="newsletterError"></div>
-            <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST" class="mr-0 mb-3 mb-md-0 opacity-10">
+            <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST"
+                  class="mr-0 mb-3 mb-md-0 opacity-10">
               <div class="input-group custom-newsletter">
-                <input class="form-control form-control-sm custom-newsletter-input rounded-0 bg-transparent border-0 pl-0 custom-text-2 text-color-light box-shadow-none" placeholder="Your E-mail Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                <input class="form-control form-control-sm custom-newsletter-input rounded-0 bg-transparent border-0 pl-0 custom-text-2 text-color-light box-shadow-none"
+                       placeholder="Your E-mail Address" name="newsletterEmail" id="newsletterEmail" type="text">
                 <span class="input-group-append">
-											<button class="btn text-color-light custom-text-4 font-weight-semibold custom-btn-with-arrow custom-btn-with-arrow-light" type="submit">Sign Up</button>
-										</span>
+                  <button class="btn text-color-light custom-text-4 font-weight-semibold custom-btn-with-arrow custom-btn-with-arrow-light"
+                    type="submit">Sign Up</button>
+                </span>
               </div>
             </form>
           </div>
