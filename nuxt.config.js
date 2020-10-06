@@ -1,6 +1,9 @@
 export default {
 	head: {
-		title: "My Nuxt.js Application!",
+		htmlAttrs: {
+			lang: 'en'
+		},
+		title: process.env.NUXT_ENV_TITLE || 'Top Gear Brains EOOD',
 		script: [
 			{ src: '/js/vendor/modernizr.min.js', body: false, defer: true },
 
