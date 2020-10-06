@@ -36,58 +36,13 @@
                         <a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3 dropdown-toggle" href="/services">
                           Our Services
                         </a>
-<!--                        <ul class="dropdown-menu">-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services.html">-->
-<!--                              Overview-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              UX Design-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Web Development-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              B2B Software-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Content Marketing-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Email Marketing-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Search Engine Optimize-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Social Media Ads-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Brand and Identity-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                          <li>-->
-<!--                            <a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">-->
-<!--                              Content Strategy-->
-<!--                            </a>-->
-<!--                          </li>-->
-<!--                        </ul>-->
+                        <ul class="dropdown-menu">
+                          <li v-for="row in services" :key="row.slug">
+                            <nuxt-link class="dropdown-item font-weight-normal" :to="'/services/' + row.slug">
+                              {{row.title}}
+                            </nuxt-link>
+                          </li>
+                        </ul>
                       </li>
 <!--                      <li class="dropdown-primary">-->
 <!--                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-work.html">-->
@@ -130,6 +85,6 @@
 
 <script>
 export default {
-  props: ['page']
+  props: ['services']
 }
 </script>
