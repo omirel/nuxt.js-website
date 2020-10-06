@@ -1,17 +1,29 @@
 <template>
     <div role="main" class="main" :key="page.slug">
-        <Header :data="page"/>
-        <GetInTouch :data="teasers"/>
+        <ServiceHeader :data="page"/>
+
+        <section class="mt-3 mt-xl-0 py-5 p-relative z-index-2">
+            <div class="container">
+                <div class="row">
+                    <ServiceNav :data="nav" :active="active"/>
+
+                    <div class="col-xl-8 mt-lg-5 mt-xl-0" v-html="page.content"></div>
+                </div>
+            </div>
+        </section>
+
+        <GetInTouch :data="page"/>
     </div>
 </template>
 
 <script>
     import GetInTouch from '~/components/getInTouch'
     import config from '~/config'
-    import Header from "~/components/header";
+    import ServiceHeader from "~/components/serviceHeader";
     import Services from "~/components/services";
     import WeHelp from "~/components/weHelp";
     import Clients from "~/components/clients";
+    import ServiceNav from "../../components/serviceNav";
 
     const Cosmic = require('cosmicjs')
     const api = Cosmic()
@@ -24,13 +36,16 @@
             }
         },
         async asyncData({params}) {
-            const page = await bucket.getObject({slug: "services"})
-
-            const teasers = await bucket.getObjects({type: "insights"})
+            const page = await bucket.getObject(params)
+            const nav  = await bucket.getObjects({
+                type: "services",
+                props: ["slug", "title"]
+            })
 
             return {
                 page: page.object,
-                teasers: teasers.objects,
+                nav: nav.objects,
+                active: params.slug,
                 loading: false
             }
         },
@@ -40,10 +55,11 @@
             }
         },
         components: {
+            ServiceNav,
             Clients,
             WeHelp,
             Services,
-            Header,
+            ServiceHeader,
             GetInTouch
         }
     }
