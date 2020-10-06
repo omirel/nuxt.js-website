@@ -4,6 +4,15 @@ export default {
 			lang: 'en'
 		},
 		title: process.env.NUXT_ENV_TITLE || 'Top Gear Brains EOOD',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Top Gear Brains EOOD is your digital agency in Varna, Bulgaria'
+			}
+		],
 		script: [
 			{ src: '/js/vendor/modernizr.min.js', body: false, defer: true },
 
