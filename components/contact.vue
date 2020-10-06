@@ -3,12 +3,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h4 class="d-block w-100 text-color-dark custom-text-10 font-weight-bolder text-center mb-4 pb-3 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">We Are Where You Are<span class="text-color-primary">.</span></h4>
+					<h4 class="d-block w-100 text-color-dark custom-text-10 font-weight-bolder text-center mb-4 pb-3 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">{{data.metadata.subheader}}<span class="text-color-primary">.</span></h4>
 					<div class="d-flex flex-row flex-wrap align-items-center justify-content-center mb-4 pb-3">
-						<span class="d-flex flex-column flex-md-row text-center text-md-left px-5 px-md-0 mb-4 mb-md-0 align-items-center custom-text-5 font-weight-medium appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;"><i class="far fa-envelope text-color-primary text-4 mr-2 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;"></i> <a href="mailto:mail@domain.com" class="text-color-default">porto@digitalagency.com</a></span>
-						<span class="d-flex flex-column flex-md-row text-center text-md-left px-5 px-md-0 align-items-center custom-text-5 font-weight-medium appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;"><i class="far fa-clock text-color-primary text-4 ml-md-4 mr-md-2"></i>Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED</span>
+						<span class="d-flex flex-column flex-md-row text-center text-md-left px-5 px-md-0 mb-4 mb-md-0 align-items-center custom-text-5 font-weight-medium appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;"><i class="far fa-envelope text-color-primary text-4 mr-2 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;"></i> <a :href="'mailto:' + data.metadata.email" class="text-color-default">{{data.metadata.email}}</a></span>
+						<span class="d-flex flex-column flex-md-row text-center text-md-left px-5 px-md-0 align-items-center custom-text-5 font-weight-medium appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;"><i class="far fa-clock text-color-primary text-4 ml-md-4 mr-md-2"></i>{{data.metadata.openinghours}}</span>
 					</div>
-					<p class="custom-text-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.</p>
+					<p class="custom-text-4 text-center appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;" v-html="data.metadata.content1"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -21,10 +21,10 @@
 							<div class="row justify-content-end p-relative h-100">
 								<img alt="Top Gear Brains EOOD" src="img/demos/digital-agency-2/contact-us/contact-us-1.jpg" class="img-fluid">
 								<div class="col-lg-6 bg-color-primary d-flex flex-column align-items-center justify-content-center col-where-you-are-postal-text py-5 py-lg-0">
-									<h4 class="text-color-light custom-text-9">Los Angeles</h4>
-									<p class="mb-1 text-color-light custom-text-4">123 The Main Street</p>
-									<p class="mb-1 text-color-light custom-text-4">Los Angeles, CA 10000</p>
-									<p class="mb-0 text-color-light custom-text-4"><a href="tel:+1234567890" class="text-color-light">(123) 456-7890</a></p>
+									<h4 class="text-color-light custom-text-9">{{offices[0].title}}</h4>
+									<p class="mb-1 text-color-light custom-text-4">{{offices[0].metadata.city}}</p>
+									<p class="mb-1 text-color-light custom-text-4">{{offices[0].metadata.street}}</p>
+									<p class="mb-0 text-color-light custom-text-4"><a :href="'tel:' + offices[0].metadata.phone" class="text-color-light">{{offices[0].metadata.phone}}</a></p>
 								</div>
 							</div>
 						</div>
@@ -32,10 +32,10 @@
 							<div class="row justify-content-end p-relative h-100">
 								<img alt="Top Gear Brains EOOD" src="img/demos/digital-agency-2/contact-us/contact-us-2.jpg" class="img-fluid">
 								<div class="col-lg-6 bg-color-primary d-flex flex-column align-items-center justify-content-center col-where-you-are-postal-text py-5 py-lg-0">
-									<h4 class="text-color-light custom-text-9">New York</h4>
-									<p class="mb-1 text-color-light custom-text-4">123 The Main Street</p>
-									<p class="mb-1 text-color-light custom-text-4">New York, NY 10000</p>
-									<p class="mb-0 text-color-light custom-text-4"><a href="tel:+1234567890" class="text-color-light">(123) 456-7890</a></p>
+									<h4 class="text-color-light custom-text-9">{{offices[1].title}}</h4>
+									<p class="mb-1 text-color-light custom-text-4">{{offices[1].metadata.city}}</p>
+									<p class="mb-1 text-color-light custom-text-4">{{offices[1].metadata.street}}</p>
+									<p class="mb-0 text-color-light custom-text-4"><a :href="'tel:' + offices[1].metadata.phone" class="text-color-light">{{offices[1].metadata.phone}}</a></p>
 								</div>
 							</div>
 						</div>
@@ -88,6 +88,6 @@
 
 <script>
 	export default {
-		props: ['data']
+		props: ['data', 'offices']
 	}
 </script>

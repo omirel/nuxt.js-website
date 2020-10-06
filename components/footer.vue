@@ -25,16 +25,16 @@
         <div class="col-sm-12 col-lg-6 col-xl-4 col-info-footer mt-4 mt-sm-5 mt-lg-0">
           <div class="row">
             <div class="col-md-6">
-              <span class="d-block text-left text-lg-right text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Germany</span>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">63067 Offenbach am Main</p>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Andréstraße 33</p>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
+              <span class="d-block text-left text-lg-right text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">{{offices[0].title}}</span>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">{{offices[0].metadata.city}}</p>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">{{offices[0].metadata.street}}</p>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a :href="'tel:' + offices[0].metadata.phone" class="text-color-default">{{offices[0].metadata.phone}}</a></p>
             </div>
             <div class="col-md-6 mt-3 mt-md-0">
-              <span class="d-block text-left text-lg-right text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Bulgaria</span>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">Varna</p>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Ulitza 1</p>
-              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
+              <span class="d-block text-left text-lg-right text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">{{offices[1].title}}</span>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">{{offices[1].metadata.city}}</p>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">{{offices[1].metadata.street}}</p>
+              <p class="mb-0 text-left text-lg-right text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a :href="'tel:' + offices[1].metadata.phone" class="text-color-default">{{offices[1].metadata.phone}}</a></p>
             </div>
           </div>
         </div>
@@ -49,13 +49,13 @@
                     <nav>
                       <ul class="nav" id="footerNav">
                         <li>
-                          <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-our-services.html">Our Services</a>
+                          <nuxt-link class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" to="/services">Our Services</nuxt-link>
                         </li>
                         <li>
-                          <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-our-work.html">Our Work</a>
+                          <nuxt-link class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" to="/work">Our Work</nuxt-link>
                         </li>
                         <li>
-                          <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-contact-us.html">Contact Us</a>
+                          <nuxt-link class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" to="/contact">Contact Us</nuxt-link>
                         </li>
                       </ul>
                     </nav>
@@ -85,29 +85,7 @@
 </template>
 
 <script>
-  import config from '../config'
-
   export default {
-    data() {
-      return {
-        loading: config.cosmic.bucket.slug
-      }
-    }
+    props: ['offices']
   }
 </script>
-
-<style>
-.footer {
-  background-color: #333;
-  color: #fff;
-  font-size: 18px;
-  width: 100%;
-}
-.footer-notes {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 15px;
-  padding-bottom: 60px;
-  padding-top: 40px;
-}
-</style>

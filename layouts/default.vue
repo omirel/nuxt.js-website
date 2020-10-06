@@ -2,7 +2,7 @@
   <div class="body">
     <nav-bar :services="services"/>
     <nuxt/>
-    <site-footer/>
+    <site-footer :offices="offices"/>
   </div>
 </template>
 
@@ -18,7 +18,8 @@ const bucket = api.bucket(config.cosmic.bucket)
 export default {
   data() {
     return {
-      services: []
+      services: [],
+      offices: []
     }
   },
   async fetch() {
@@ -27,6 +28,12 @@ export default {
       props: ["slug", "title"]
     })
     this.services = services.objects
+
+    const offices = await bucket.getObjects({
+      type: "offices",
+      props: ["slug", "title", "metadata"]
+    })
+    this.offices = offices.objects
   },
   head: {
     meta: [

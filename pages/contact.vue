@@ -1,7 +1,7 @@
 <template>
     <div role="main" class="main" :key="page.slug">
         <Header :data="page"/>
-        <Contact :data="page"/>
+        <Contact :data="page" :offices="offices"/>
         <GetInTouch :data="page"/>
     </div>
 </template>
@@ -25,8 +25,14 @@
         async asyncData({params}) {
             const data = await bucket.getObject({slug: "contact"})
 
+            const offices = await bucket.getObjects({
+                type: "offices",
+                props: ["slug", "title", "metadata"]
+            })
+
             return {
                 page: data.object,
+                offices: offices.objects,
                 loading: false
             }
         },
