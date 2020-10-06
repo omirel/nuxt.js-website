@@ -174,7 +174,7 @@ window.theme.fn = {
 	};
 
 	PluginBeforeAfter.defaults = {
-		
+	
 	};
 
 	PluginBeforeAfter.prototype = {
@@ -414,7 +414,7 @@ window.theme.fn = {
 				$el.on('change.owl.carousel', function(event) {
 					if (event.namespace && event.property.name === 'position') {
 					    var target = event.relatedTarget.relative(event.property.value, true);
-					    $( $el.data('sync') ).owlCarousel('to', target, 300, true);				        
+					    $( $el.data('sync') ).owlCarousel('to', target, 300, true);
 				  	}
 				});
 			}
@@ -897,11 +897,11 @@ window.theme.fn = {
 				}
 
 				// First Load
-				self.movement(minus);	
+				self.movement(minus);
 
 				// Scroll
 				$window.on('scroll', function(){
-					self.movement(minus);				   
+					self.movement(minus);
 				});
 
 			}
@@ -1033,7 +1033,7 @@ window.theme.fn = {
 
 			// SVG Content
 			var SVGContent = $.get({
-				url: $el.attr('src'), 
+				url: $el.attr('src'),
 				success: function(data, status, xhr){
 					var iconWrapper = $('<div class="animated-icon">'+ xhr.responseText +'</div>'),
 						uniqid = 'icon_' + Math.floor(Math.random() * 26) + Date.now();
@@ -1043,7 +1043,7 @@ window.theme.fn = {
 					if( $el.attr('width') ) {
 						iconWrapper.find('svg')
 							.attr('width', $el.attr('width'))
-							.attr('height', $el.attr('width'));						
+							.attr('height', $el.attr('width'));
 					}
 
 					$el.replaceWith(iconWrapper);
@@ -1180,7 +1180,7 @@ window.theme.fn = {
 		appearEffect: '',
 		imgFluid: true,
 		appear: function(elements_left, settings) {
-			
+		
 		},
 		load: function(elements_left, settings) {
 			$(this).addClass($.trim('lazy-load-loaded ' + settings.appearEffect)).css({
@@ -1678,7 +1678,7 @@ window.theme.fn = {
 			});
 
 			self.options.wrapper.waitForImages(function() {
-				self.options.wrapper.isotope(self.options);	
+				self.options.wrapper.isotope(self.options);
 			});
 
 			// IE10/11 fix
@@ -2251,8 +2251,8 @@ window.theme.fn = {
 	    	enable: false
 	    },
 	    particles: {
-			startSlide: "first", 
-			endSlide: "last", 
+			startSlide: "first",
+			endSlide: "last",
 			zIndex: "1",
 			particles: {
 				number: {value: 80}, color: {value: "#ffffff"},
@@ -2501,7 +2501,7 @@ window.theme.fn = {
 				iconClass: 'fas fa-chevron-up',
 				delay: 1000,
 				visibleMobile: false,
-				label: false,
+				label: "To Top",
 				easing: 'easeOutBack'
 			},
 
@@ -2840,7 +2840,7 @@ window.theme.fn = {
 
 			    	var $currentSection = e.currentSection,
 			    		headerColor     = $currentSection.data('section-scroll-header-color');
-								    	
+								 
 			    	$('#header .header-nav').removeClass('header-nav-light-text header-nav-dark-text').addClass('header-nav-' + headerColor + '-text');
 			    	$('#header .header-nav-features').removeClass('header-nav-features-dark header-nav-features-light').addClass('header-nav-features-' + headerColor);
 			    	$('#header .header-social-icons').removeClass('social-icons-icon-dark social-icons-icon-light').addClass('social-icons-icon-' + headerColor);
@@ -3143,7 +3143,7 @@ window.theme.fn = {
 
 			$('.section-scroll').each(function(){
 				if( $(this).outerHeight() < ( $(window).height() + 3 ) ) {
-					$(this).css({ height: '100vh' });		
+					$(this).css({ height: '100vh' });
 				} else {
 					$(this).addClass('section-scroll-scrollable');
 				}
@@ -3795,8 +3795,8 @@ window.theme.fn = {
 				class_to_check = ( self.options.wrapper.hasClass('sticky-wrapper-effect-1') ) ? 'sticky-effect-active' : 'sticky-active';
 
 			$window.on('scroll sticky.effect.active', function(){
-				if( self.options.wrapper.hasClass( class_to_check ) ) {		
-					if( sticky_activate_flag ) {			
+				if( self.options.wrapper.hasClass( class_to_check ) ) {
+					if( sticky_activate_flag ) {
 						if( $logo.attr('data-change-src') ) {
 							self.changeLogoSrc(true);
 						}
@@ -3804,8 +3804,8 @@ window.theme.fn = {
 						sticky_activate_flag = false;
 						sticky_deactivate_flag = true;
 					}
-				} else {	
-					if( sticky_deactivate_flag ) {				
+				} else {
+					if( sticky_deactivate_flag ) {
 						if( $logo.attr('data-change-src') ) {
 							self.changeLogoSrc(false);
 						}
@@ -3827,12 +3827,12 @@ window.theme.fn = {
 				}
 
 				$window.on('scroll', function(){
-					if( self.options.stickyStartEffectAt < $window.scrollTop() ) {	
+					if( self.options.stickyStartEffectAt < $window.scrollTop() ) {
 						self.options.wrapper.addClass('sticky-effect-active');
 						is_backing = true;
 
 						$window.trigger('sticky.effect.active');
-					} else {	
+					} else {
 						if( is_backing ) {
 							self.options.wrapper.find('.sticky-body').addClass('position-fixed');
 							is_backing = false;
@@ -4241,7 +4241,7 @@ window.theme.fn = {
 					e.preventDefault();
 					$.get(self.options.refreshCaptchaURL, function(url) {
 						$('#captcha-image').attr('src', url);
-					});					
+					});
 				});
 
 			},
@@ -4572,7 +4572,7 @@ window.theme.fn = {
 								divisor = $(document).height() / $(window).height();
 
 							    self.$menuFloating.find('.header-column > .header-row').css({
-							    	transform : 'translateY( calc('+ scrollPercent +'vh - '+ st / divisor +'px) )' 
+							    	transform : 'translateY( calc('+ scrollPercent +'vh - '+ st / divisor +'px) )'
 							    });
 							});
 						}
@@ -4849,7 +4849,7 @@ window.theme.fn = {
 
 				$('.hamburguer-close:not(.side-panel-toggle)').on('click', function(){
 					$('.hamburguer-btn:not(.hamburguer-btn-side-header-mobile-show)').trigger('click');
-				});				
+				});
 				
 				// Set Header Body Height when open mobile menu
 				$('.header-nav-main nav').on('show.bs.collapse', function () {
@@ -4887,7 +4887,7 @@ window.theme.fn = {
 					if( $window.width() < 992 && $header.hasClass('header-effect-shrink') ) {
 						if( $('.header-btn-collapse-nav').attr('aria-expanded') == 'true' ) {
 							$('.header-body').animate({
-						 		height: ( $('.header-nav-main nav').outerHeight(true) + theme.StickyHeader.options.stickyHeaderContainerHeight ) + ( ($('.header-nav-bar').get(0)) ? $('.header-nav-bar').outerHeight() : 0 ) 
+						 		height: ( $('.header-nav-main nav').outerHeight(true) + theme.StickyHeader.options.stickyHeaderContainerHeight ) + ( ($('.header-nav-bar').get(0)) ? $('.header-nav-bar').outerHeight() : 0 )
 						 	});
 						}
 					}
@@ -4903,7 +4903,7 @@ window.theme.fn = {
 					}
 				});
 
-				// Remove Open Class on Resize		
+				// Remove Open Class on Resize
 				$window.on('resize.removeOpen', function(e) {
 					if( e.from == 'header-nav-click-to-open' ) {
 						return;
@@ -5414,7 +5414,7 @@ window.theme.fn = {
 							self.options.headerBody.css({
 								'position' : 'fixed',
 								'top' : 0
-							});								
+							});
 						} else {
 							self.options.headerBody.css({
 								'position' : 'absolute',
@@ -5563,7 +5563,7 @@ window.theme.fn = {
 
 							if( $window.scrollTop() > $('.body').offset().top ) {
 								// Set Header Body Position Fixed
-								self.options.headerBody.css('position','fixed');								
+								self.options.headerBody.css('position','fixed');
 							}
 
 						} else {
