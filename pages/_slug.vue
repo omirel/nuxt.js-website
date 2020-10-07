@@ -3,7 +3,7 @@
         <Slider :data="page"/>
         <BusinessFields :data="teasers"/>
         <OurApproach :data="teasers"/>
-        <OurWork :data="teasers"/>
+        <OurWork :data="works"/>
         <WeHelp :data="teasers"/>
         <Insights :data="teasers"/>
         <GetInTouch :data="teasers"/>
@@ -36,9 +36,12 @@
 
             const teasers = await bucket.getObjects({type: "insights"})
 
+            const works = await bucket.getObjects({type: "works", props: ["slug", "title", "metadata"]})
+
             return {
                 page: data.object,
                 teasers: teasers.objects,
+                works: works.objects,
                 loading: false
             }
         },

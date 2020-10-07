@@ -4,86 +4,30 @@
 			<div class="row bg-color-dark">
 				<div class="col-xl-9 px-0">
 					<div class="sort-destination w-100" data-sort-id="portfolio">
-						<div class="row w-100 m-0 isotope-item search-engine-optimize social-media-ads">
+
+						<div v-for="(row, index) in data" v-if="index < limit" class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
+								<nuxt-link :to="'/work/' + row.slug" class="d-block">
 									<figure class="picture">
 										<picture>
-											<source data-srcset="/img/bg/bg-5.jpg?webp" type="image/webp">
-											<source data-srcset="/img/bg/bg-5.jpg" type="image/jpg">
-											<img alt="Top Gear Brains EOOD" data-src="/img/bg/bg-5.jpg" class="lazyload w-100">
+											<source :data-srcset="'/img/bg/' + row.metadata.bgimage + '?webp'" type="image/webp">
+											<source :data-srcset="'/img/bg/' + row.metadata.bgimage" type="image/jpg">
+											<img alt="Top Gear Brains EOOD" :data-src="'/img/bg/' + row.metadata.bgimage" class="lazyload w-100">
 										</picture>
 									</figure>
 									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 										<div class="text-left p-relative z-index-2 mb-3">
-											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Campaing</h4>
-											<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">search engine optimize, social media ads</p>
-											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
+											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">{{row.title}}</h4>
+											<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">{{row.metadata.category.join(', ')}}</p>
+											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">
+												View Work
+											</span>
 										</div>
 									</div>
-								</a>
+								</nuxt-link>
 							</div>
 						</div>
-						<div class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
-							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<figure class="picture">
-										<picture>
-											<source data-srcset="/img/bg/bg-6.jpg?webp" type="image/webp">
-											<source data-srcset="/img/bg/bg-6.jpg" type="image/jpg">
-											<img alt="Top Gear Brains EOOD" data-src="/img/bg/bg-6.jpg" class="lazyload w-100">
-										</picture>
-									</figure>
-									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-										<div class="text-left p-relative z-index-2 mb-3">
-											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Porto Dashboard</h4>
-											<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">content marketing, email marketing, search engine optimize</p>
-											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="row w-100 m-0 isotope-item ui-design web-development b2b-software">
-							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<figure class="picture">
-										<picture>
-											<source data-srcset="/img/bg/bg-7.jpg?webp" type="image/webp">
-											<source data-srcset="/img/bg/bg-7.jpg" type="image/jpg">
-											<img alt="Top Gear Brains EOOD" data-src="/img/bg/bg-7.jpg" class="lazyload w-100">
-										</picture>
-									</figure>
-									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-										<div class="text-left p-relative z-index-2 mb-3">
-											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Responsive Photos</h4>
-											<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">ui design, web development, b2b software</p>
-											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="row w-100 m-0 isotope-item brand-and-identity content-strategy">
-							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-									<figure class="picture">
-										<picture>
-											<source data-srcset="/img/bg/bg-8.jpg?webp" type="image/webp">
-											<source data-srcset="/img/bg/bg-8.jpg" type="image/jpg">
-											<img alt="Top Gear Brains EOOD" data-src="/img/bg/bg-8.jpg" class="lazyload w-100">
-										</picture>
-									</figure>
-									<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-										<div class="text-left p-relative z-index-2 mb-3">
-											<h4 class="text-color-light custom-text-9 font-weight-bolder text-decoration-none mb-2">Okler Mobile App</h4>
-											<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">brand and identity, content strategy</p>
-											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
+
 					</div>
 				</div>
 				<div class="col-xl-3 bg-color-dark px-xl-0 sticky-container">
@@ -93,35 +37,12 @@
 								<h4 class="text-color-light custom-text-10 font-weight-bolder custom-title-with-icon custom-title-with-icon-primary">Our Work</h4>
 								<ul class="list-unstyled sort-source" data-sort-id="portfolio" data-option-key="filter">
 									<li class="nav-item active" data-option-value="*">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">View All</a>
+										<a href="/work" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">View All</a>
 									</li>
-									<li class="nav-item" data-option-value=".ui-design">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">UI Design</a>
+									<li v-for="category in categories" class="nav-item" data-option-value=".ui-design">
+										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">{{category}}</a>
 									</li>
-									<li class="nav-item" data-option-value=".web-development">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Web Development</a>
-									</li>
-									<li class="nav-item" data-option-value=".b2b-software">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">B2B Software</a>
-									</li>
-									<li class="nav-item" data-option-value=".content-marketing">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Content Marketing</a>
-									</li>
-									<li class="nav-item" data-option-value=".email-marketing">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Email Marketing</a>
-									</li>
-									<li class="nav-item" data-option-value=".search-engine-optimize">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Search Engine Optimize</a>
-									</li>
-									<li class="nav-item" data-option-value=".social-media-ads">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Social Media Ads</a>
-									</li>
-									<li class="nav-item" data-option-value=".brand-and-identity">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Brand and Identity</a>
-									</li>
-									<li class="nav-item" data-option-value=".content-strategy">
-										<a href="#ourWork" data-hash data-hash-offset="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Content Strategy</a>
-									</li>
+
 								</ul>
 							</div>
 						</div>
@@ -134,6 +55,25 @@
 
 <script>
 	export default {
-		props: ['data']
+		props: ['data'],
+		data() {
+			return {
+				limit: 4
+			}
+		},
+		computed: {
+			categories() {
+				let catList = [];
+
+				for(let i=0;i<this.data.length;i++){
+					for(let ii=0;ii<this.data[i].metadata.category.length;ii++) {
+						if (catList.indexOf(this.data[i].metadata.category[ii]) == -1)
+							catList.push(this.data[i].metadata.category[ii])
+					}
+				}
+
+				return catList
+			}
+		}
 	}
 </script>
