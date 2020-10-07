@@ -6,8 +6,7 @@
             <div class="container">
                 <div class="row">
                     <ServiceNav :data="nav" :active="active"/>
-
-                    <div class="col-xl-8 mt-lg-5 mt-xl-0" v-html="page.content"></div>
+                    <div class="col-xl-8 mt-lg-5 mt-xl-0 custom-font-tertiary custom-text-7 mb-4" v-html="page.content"></div>
                 </div>
             </div>
         </section>
