@@ -32,7 +32,7 @@
 						<div v-for="(row, index) in data"
 							 class="row w-100 mb-4 isotope-item brand-and-identity content-strategy">
 							<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-								<a href="demo-digital-agency-2-our-work-detail.html" class="d-block h-100">
+								<nuxt-link :to="'/work/' + row.slug" class="d-block h-100">
 									<figure class="picture">
 										<picture>
 											<source :data-srcset="'/img/bg/' + row.metadata.bgimage + '?webp'"
@@ -52,7 +52,7 @@
 											<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
 										</div>
 									</div>
-								</a>
+								</nuxt-link>
 							</div>
 						</div>
 					</div>
