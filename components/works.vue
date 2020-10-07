@@ -10,18 +10,7 @@
 								 class="" style="width: 280px;">
 								<h4 class="text-color-dark custom-text-8 font-weight-bolder custom-title-with-icon custom-title-with-icon-primary">
 									Filter by Category:</h4>
-								<ul class="list-unstyled sort-source sort-source-light" data-sort-id="portfolio"
-									data-option-key="filter">
-									<li class="nav-item active" data-option-value="*">
-										<a href="/work" data-hash="" data-hash-offset="100"
-										   class="text-color-quaternary text-color-hover-dark text-decoration-none mb-2 p-0 d-block font-weight-medium">View
-											All</a>
-									</li>
-									<li v-for="category in categories" class="nav-item" data-option-value=".ui-design">
-										<a href="#ourWork" data-hash="" data-hash-offset="100"
-										   class="text-color-quaternary text-color-hover-dark text-decoration-none mb-2 p-0 d-block font-weight-medium">{{category}}</a>
-									</li>
-								</ul>
+								<WorkCategories :data="data"/>
 							</div>
 						</div>
 					</div>
@@ -63,21 +52,9 @@
 </template>
 
 <script>
+	import WorkCategories from "./workCategories";
 	export default {
-		props: ['data'],
-		computed: {
-			categories() {
-				let catList = [];
-
-				for(let i=0;i<this.data.length;i++){
-					for(let ii=0;ii<this.data[i].metadata.category.length;ii++) {
-						if (catList.indexOf(this.data[i].metadata.category[ii]) == -1)
-							catList.push(this.data[i].metadata.category[ii])
-					}
-				}
-
-				return catList
-			}
-		}
+				components: {WorkCategories},
+		props: ['data']
 	}
 </script>
