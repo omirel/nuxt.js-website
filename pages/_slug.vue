@@ -1,11 +1,11 @@
 <template>
     <div role="main" class="main" :key="page.slug">
         <Slider :data="page"/>
-        <BusinessFields :data="teasers"/>
-        <OurApproach :data="teasers"/>
+        <BusinessFields :data="page"/>
+        <OurApproach :data="page"/>
         <OurWork :data="works"/>
         <WeHelp :data="teasers"/>
-        <Insights :data="teasers"/>
+<!--        <Insights :data="teasers"/>-->
         <GetInTouch :data="teasers"/>
     </div>
 </template>

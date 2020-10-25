@@ -49,11 +49,11 @@
                           Our Work
                         </a>
                       </li>
-                      <li class="dropdown-primary">
-                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/insights">
-                          Our Insights
-                        </a>
-                      </li>
+<!--                      <li class="dropdown-primary">-->
+<!--                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/insights">-->
+<!--                          Our Insights-->
+<!--                        </a>-->
+<!--                      </li>-->
                       <li class="dropdown-primary">
                         <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/contact">
                           Contact Us

@@ -74,13 +74,13 @@
 					</nuxt-link>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-xl-9">
-					<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.
-					</p>
-				</div>
-			</div>
+<!--			<div class="row justify-content-center">-->
+<!--				<div class="col-xl-9">-->
+<!--					<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">-->
+<!--						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.-->
+<!--					</p>-->
+<!--				</div>-->
+<!--			</div>-->
 		</div>
 	</section>
 </template>
