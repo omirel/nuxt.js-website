@@ -3,8 +3,8 @@
         <Header :data="page"/>
         <About :data="page"/>
         <Counter :data="teasers"/>
-        <AboutMarketing :data="teasers"/>
-        <Insights :data="teasers"/>
+<!--        <AboutMarketing :data="teasers"/>-->
+<!--        <Insights :data="teasers"/>-->
         <GetInTouch :data="teasers"/>
     </div>
 </template>
