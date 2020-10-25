@@ -76,7 +76,7 @@
         </div>
         <div class="col-sm-12 col-lg-5 col-xl-6">
           <div class="d-flex justify-content-end custom-footer-copywriting pt-5 mt-0 mt-lg-4">
-            <p class="mb-0 text-left text-lg-right d-block w-100 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">Porto Digital Agency. &copy; {{ $config.copyright}}</p>
+            <p class="mb-0 text-left text-lg-right d-block w-100 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">&copy; {{ $config.copyright}}</p>
           </div>
         </div>
       </div>

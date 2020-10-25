@@ -51,29 +51,29 @@
 					</nuxt-link>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-					<nuxt-link to="/services/social-media-ads" class="text-decoration-none">
-						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-							Social Media Ads
-						</div>
-					</nuxt-link>
-				</div>
-				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">
-					<nuxt-link to="/services/brand-and-identity" class="text-decoration-none">
-						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-							Brand and Identity
-						</div>
-					</nuxt-link>
-				</div>
-				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-					<nuxt-link to="/services/content-strategy" class="text-decoration-none">
-						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-							Content Strategy
-						</div>
-					</nuxt-link>
-				</div>
-			</div>
+<!--			<div class="row">-->
+<!--				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">-->
+<!--					<nuxt-link to="/services/social-media-ads" class="text-decoration-none">-->
+<!--						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">-->
+<!--							Social Media Ads-->
+<!--						</div>-->
+<!--					</nuxt-link>-->
+<!--				</div>-->
+<!--				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">-->
+<!--					<nuxt-link to="/services/brand-and-identity" class="text-decoration-none">-->
+<!--						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">-->
+<!--							Brand and Identity-->
+<!--						</div>-->
+<!--					</nuxt-link>-->
+<!--				</div>-->
+<!--				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">-->
+<!--					<nuxt-link to="/services/content-strategy" class="text-decoration-none">-->
+<!--						<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">-->
+<!--							Content Strategy-->
+<!--						</div>-->
+<!--					</nuxt-link>-->
+<!--				</div>-->
+<!--			</div>-->
 <!--			<div class="row justify-content-center">-->
 <!--				<div class="col-xl-9">-->
 <!--					<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">-->
