@@ -7,8 +7,8 @@
 			<div class="row mt-5">
 				<div class="col">
 					<ul class="breadcrumb breadcrumb-light custom-title-with-icon-primary d-block">
-						<li><a href="#">Home</a></li>
-						<li class="active">{{data.metadata.headline}}</li>
+						<li><a href="/">Home</a></li>
+						<li class="active">Switch with us to the higher gear</li>
 					</ul>
 					<h1 class="custom-text-10 font-weight-bolder">{{data.metadata.headline}}</h1>
 				</div>

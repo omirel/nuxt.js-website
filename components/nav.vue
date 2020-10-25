@@ -23,7 +23,7 @@
                   <nav class="collapse">
                     <ul class="nav nav-pills" id="mainNav">
                       <li class="dropdown-primary">
-                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3 active" href="/">
+                        <a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="/">
                           Home
                         </a>
                       </li>

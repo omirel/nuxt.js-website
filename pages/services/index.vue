@@ -3,7 +3,7 @@
         <Header :data="page"/>
         <Services :data="page"/>
         <WeHelp :data="teasers"/>
-        <Clients :data="teasers"/>
+<!--        <Clients :data="teasers"/>-->
         <GetInTouch :data="teasers"/>
     </div>
 </template>

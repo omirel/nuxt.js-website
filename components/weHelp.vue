@@ -46,7 +46,7 @@
 				<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
 					<nuxt-link to="/services/search-engine-optimize" class="text-decoration-none">
 						<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-							Search Engine Optimize
+							Search Engine Optimization
 						</div>
 					</nuxt-link>
 				</div>
